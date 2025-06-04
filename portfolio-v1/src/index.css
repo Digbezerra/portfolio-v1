@@ -50,9 +50,8 @@ html {
 
 body {
   font-family: "Inter", "Open Sans", "Helvetica Neue", sans-serif;
-
-  color: var(--color-text);
-  background-color: var(--color-background-900);
+  color: var(--color-text-light);
+  background-color: var(--bg-primary);
   padding: 2.4rem;
 }
 
@@ -65,8 +64,6 @@ li,
 figure {
   margin: 0;
   padding: 0;
-  font: inherit;
-  color: inherit;
 }
 
 ul,
@@ -76,15 +73,11 @@ ol {
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
-body {
-  line-height: 1.5;
-  font-family: system-ui, sans-serif;
-  background-color: #fff;
-  color: #111;
-  -webkit-font-smoothing: antialiased;
+a:visited,
+a:link {
+  color: inherit;
 }
 
 img,
@@ -94,13 +87,6 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
 }
 
 button {
@@ -116,4 +102,61 @@ header,
 nav,
 section {
   display: block;
+}
+
+.logo {
+  width: 140px;
+}
+
+.navbar {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: 4rem;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-li {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-light);
+}
+
+.nav-span {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--blue-light);
+  margin-right: 4px;
+}
+
+.nav-li:hover {
+  transition: var(--transition);
+  color: var(--blue-vivid);
+}
+
+.navbar button {
+  display: inline-block;
+}
+
+.btn-default {
+  color: var(--blue-light);
+  border: 2px solid var(--blue-light);
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-family: inherit;
+}
+
+.btn-default:hover {
+  color: var(--blue-vivid);
+  border: 2px solid var(--blue-vivid);
+  transition: var(--transition);
 }

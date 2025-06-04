@@ -1,10 +1,10 @@
-import { GithubIcon } from "./components/icons/Github";
+import { Header } from "./components/Header";
 
 function App() {
   return (
-    <div className="icon">
-      <GithubIcon />
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
