@@ -24,7 +24,8 @@
   --font-size-lg: 18px;
   --font-size-xl: 20px;
   --font-size-xxl: 22px;
-  --font-size-heading: 32px;
+  --font-size-subtitle: 60px;
+  --font-size-heading: 80px;
 
   --border-radius: 4px;
   --nav-height: 100px;
@@ -104,14 +105,24 @@ section {
   display: block;
 }
 
+.margin-bottom--regular {
+  margin-bottom: 5rem;
+}
+
+.main-container {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
 .logo {
   width: 140px;
 }
 
 .navbar {
-  padding: 2rem 4rem;
+  padding: 0 4rem;
   display: flex;
   align-items: center;
+  height: 100px;
 }
 
 .nav {
@@ -159,4 +170,42 @@ section {
   color: var(--blue-vivid);
   border: 2px solid var(--blue-vivid);
   transition: var(--transition);
+}
+
+.section-hero {
+  min-height: calc(100vh - 10rem);
+  padding: 0px 15rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-featured {
+  font-size: var(--font-size-md);
+  color: var(--blue-light);
+  font-family: var(--font-mono);
+  margin-bottom: 3rem;
+}
+
+.title-main {
+  font-size: var(--font-size-heading);
+  font-family: var(--font-sans);
+  color: var(--color-text-light);
+}
+
+.title-secondary {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-subtitle);
+  color: var(--blue-lighter);
+  margin-bottom: 3rem;
+}
+
+.text-regular {
+  font-size: var(--font-size-lg);
+}
+
+.btn-hero {
+  font-size: var(--font-size-lg);
+  width: 300px;
+  padding: 20px 25px;
 }

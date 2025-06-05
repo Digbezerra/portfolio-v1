@@ -1,4 +1,5 @@
 import { NavBar } from "./NavBar";
+import { Hero } from "./sections/Hero";
 
 export function Header() {
   return (
@@ -6,6 +7,9 @@ export function Header() {
       <header className="header">
         <NavBar />
       </header>
+      <div className="main-container">
+        <Hero />
+      </div>
     </>
   );
 }
