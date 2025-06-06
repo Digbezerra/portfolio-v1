@@ -27,7 +27,7 @@
   --font-size-subtitle: 60px;
   --font-size-heading: 80px;
 
-  --border-radius: 4px;
+  --border-radius: 12px;
   --nav-height: 100px;
 
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -96,6 +96,11 @@ button {
   cursor: pointer;
 }
 
+p {
+  font-size: var(--font-size-md);
+  margin-bottom: 3rem;
+}
+
 article,
 aside,
 footer,
@@ -111,7 +116,11 @@ section {
 
 .main-container {
   max-width: 160rem;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
@@ -130,26 +139,26 @@ section {
   margin-right: 4rem;
 }
 
-.nav-ul {
+.nav__ul {
   display: flex;
   gap: 2rem;
 }
 
-.nav-li {
+.nav__li {
   display: block;
   font-size: 14px;
   font-weight: 500;
   color: var(--color-text-light);
 }
 
-.nav-span {
+.nav__span {
   font-family: var(--font-mono);
   font-weight: 600;
   color: var(--blue-light);
   margin-right: 4px;
 }
 
-.nav-li:hover {
+.nav__li:hover {
   transition: var(--transition);
   color: var(--blue-vivid);
 }
@@ -158,7 +167,7 @@ section {
   display: inline-block;
 }
 
-.btn-default {
+.btn--default {
   color: var(--blue-light);
   border: 2px solid var(--blue-light);
   padding: 1rem 1.5rem;
@@ -166,7 +175,7 @@ section {
   font-family: inherit;
 }
 
-.btn-default:hover {
+.btn--default:hover {
   color: var(--blue-vivid);
   border: 2px solid var(--blue-vivid);
   transition: var(--transition);
@@ -174,38 +183,142 @@ section {
 
 .section-hero {
   min-height: calc(100vh - 10rem);
-  padding: 0px 15rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100rem;
 }
 
-.text-featured {
-  font-size: var(--font-size-md);
-  color: var(--blue-light);
-  font-family: var(--font-mono);
-  margin-bottom: 3rem;
-}
-
-.title-main {
-  font-size: var(--font-size-heading);
+.title {
   font-family: var(--font-sans);
   color: var(--color-text-light);
 }
 
-.title-secondary {
+.title--h1 {
+  font-size: var(--font-size-heading);
+}
+
+.title--h2 {
   font-family: var(--font-sans);
   font-size: var(--font-size-subtitle);
   color: var(--blue-lighter);
   margin-bottom: 3rem;
 }
 
-.text-regular {
+.title--h3 {
+  font-size: var(--font-size-xl);
+  color: var(--gray);
+}
+
+.text--featured {
+  font-size: var(--font-size-md);
+  color: var(--blue-light);
+  font-family: var(--font-mono);
+  margin-bottom: 3rem;
+}
+
+.text--regular {
   font-size: var(--font-size-lg);
 }
 
-.btn-hero {
+.text--regular__hero {
+  width: 80%;
+}
+
+.btn--hero {
   font-size: var(--font-size-lg);
   width: 300px;
   padding: 20px 25px;
+}
+
+/*
+######## SECTION ABOUT ########
+*/
+.section-about__content {
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title__number {
+  color: var(--blue-light);
+  font-family: var(--font-mono);
+}
+
+.section__title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.section__title h2 {
+  font-size: var(--font-size-xxl);
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 1px;
+  background-color: var(--blue-light);
+  margin-right: auto;
+}
+
+.profile-image {
+  width: 350px;
+  height: 300px;
+}
+
+.section-about__content p {
+  color: var(--gray);
+}
+
+/* StackList */
+
+/* content: "▹";
+position: absolute;
+left: 0px;
+color: var(--green);
+font-size: var(--fz-sm);
+line-height: 12px; */
+
+.stacklist {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 50%;
+}
+
+.stacklist__ul {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+}
+
+.stacklist__li {
+  font-size: var(--font-size-md);
+  color: var(--color-text-light);
+  font-family: var(--font-mono);
+}
+
+.stacklist__li::before {
+  content: "\25B9";
+  color: var(--blue-light);
+  margin-right: 1rem;
 }
