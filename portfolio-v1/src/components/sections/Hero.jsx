@@ -3,7 +3,7 @@ import { Button } from "../Button";
 export function Hero() {
   return (
     <>
-      <section className="section-hero">
+      <section className="section-hero margin-bottom--regular">
         <p className="text--featured">Olá, meu nome é</p>
         <h1 className="title title--h1">Diego Bezerra.</h1>
         <h2 className="title title--h2">Transformo ideias em Web apps.</h2>
