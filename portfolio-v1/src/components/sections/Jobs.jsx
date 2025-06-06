@@ -8,13 +8,13 @@ export function Jobs() {
         </div>
         <div className="section-jobs__content">
           <ul className="job__menu">
-            <li className="job__menu--item">Webjump</li>
+            <li className="job__menu--item job__menu--item--active">Webjump</li>
             <li className="job__menu--item">dsb</li>
             <li className="job__menu--item">fcl</li>
           </ul>
           <div className="job__description">
             <div>
-              <p className="tittle__job">Job description</p>
+              <p className="title__job">Job description</p>
               <p className="job__period">Jun. 2019 / Dez. 2025</p>
             </div>
             <p className="job__company">Company name</p>
