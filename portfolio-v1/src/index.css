@@ -98,7 +98,6 @@ button {
 
 p {
   font-size: var(--font-size-md);
-  margin-bottom: 3rem;
 }
 
 article,
@@ -111,7 +110,7 @@ section {
 }
 
 .margin-bottom--regular {
-  margin-bottom: 5rem;
+  margin-bottom: 20rem;
 }
 
 .main-container {
@@ -121,6 +120,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.paragraph {
+  margin-bottom: 3rem;
 }
 
 .logo {
@@ -290,13 +293,6 @@ section {
 
 /* StackList */
 
-/* content: "▹";
-position: absolute;
-left: 0px;
-color: var(--green);
-font-size: var(--fz-sm);
-line-height: 12px; */
-
 .stacklist {
   display: flex;
   flex-direction: column;
@@ -317,8 +313,83 @@ line-height: 12px; */
   font-family: var(--font-mono);
 }
 
-.stacklist__li::before {
+.stacklist__li::before,
+.job__li::before {
   content: "\25B9";
   color: var(--blue-light);
   margin-right: 1rem;
+}
+
+/* 
+SECTION JOBS
+*/
+
+.section-jobs {
+  max-width: 70rem;
+  margin: 3rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-jobs__content {
+  display: flex;
+  gap: 4rem;
+}
+
+.job__menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.job__menu--item {
+  display: block;
+  padding: 1rem 2.5rem;
+  color: var(--gray);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-md);
+  text-transform: uppercase;
+}
+
+.job__li {
+  padding-left: 3rem;
+  position: relative;
+  margin-bottom: 2rem;
+  color: var(--gray);
+}
+
+.job__li::before {
+  position: absolute;
+  left: 0;
+}
+
+.job__description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job__description div {
+  display: flex;
+}
+
+.tittle__job {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  font-weight: 700;
+}
+
+.job__period {
+  display: inline-block;
+  margin-left: 3rem;
+  color: var(--gray);
+  font-family: var(--font-mono);
+}
+
+.job__company {
+  font-size: var(--font-size-md);
+  color: var(--gray);
+  font-family: var(--font-mono);
 }
