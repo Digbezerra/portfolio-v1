@@ -7,6 +7,7 @@ import { Jobs } from "./components/sections/Jobs";
 import { FeaturedList } from "./components/sections/FeaturedList";
 import { ProjectCourses } from "./components/sections/ProjectCourses";
 import { Contact } from "./components/sections/Contact";
+import { Footer } from "./components/sections/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <FeaturedList />
         <ProjectCourses />
         <Contact />
+        <Footer />
       </MainContainer>
     </>
   );

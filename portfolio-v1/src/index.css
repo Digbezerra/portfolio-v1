@@ -263,6 +263,7 @@ section {
 
 .text--regular__hero {
   width: 80%;
+  margin-bottom: 6rem;
 }
 
 .btn--hero {
@@ -600,13 +601,15 @@ SECTION FEATURED
   max-width: 70rem;
 }
 
-.section-contact p {
+.contact__paragraph {
   color: var(--gray);
   margin-bottom: 6rem;
 }
 
 .title__number {
   font-size: var(--font-size-xxl);
+  color: var(--blue-light);
+  font-family: var(--font-mono);
 }
 
 .contact__title--h3 {
@@ -645,4 +648,25 @@ SECTION FEATURED
   display: block;
   position: relative;
   margin-bottom: 3rem;
+}
+
+/*
+####### FOOTER ########
+*/
+
+.footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.footer a {
+  color: var(--gray);
+  margin-bottom: 2rem;
+  font-size: var(--font-size-sm);
+}
+
+.footer p {
+  color: var(--gray);
+  margin-bottom: 2rem;
+  font-size: var(--font-size-sm);
 }
