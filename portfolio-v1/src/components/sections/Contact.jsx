@@ -13,7 +13,7 @@ export function Contact() {
           ducimus maxime temporibus facere corporis quos iure sunt accusantium
           eum. Voluptatibus!
         </p>
-        <Button className="btn--hero">Posso te ajudar!</Button>
+        <Button className="btn--hero">Me dê um alô!</Button>
       </section>
     </>
   );

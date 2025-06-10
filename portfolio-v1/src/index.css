@@ -120,6 +120,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .paragraph {
@@ -192,6 +193,40 @@ section {
   align-items: flex-start;
   padding: 0px;
   width: 100rem;
+}
+
+.icons__static {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40px;
+  position: fixed;
+  bottom: 40vh;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.icons__static .icon__github:hover {
+  color: var(--blue-light);
+}
+
+.email__static:hover {
+  color: var(--blue-light);
+}
+
+.email__static {
+  width: 40px;
+  position: fixed;
+  bottom: 30vh;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .title {

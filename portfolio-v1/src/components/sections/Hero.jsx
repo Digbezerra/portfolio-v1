@@ -1,4 +1,6 @@
 import { Button } from "../Button";
+import { GithubIcon } from "../icons/GithubIcon";
+import { LinkedinIcon } from "../icons/LinkedinIcon";
 
 export function Hero() {
   return (
@@ -12,6 +14,13 @@ export function Hero() {
           foco na experiência do usuário desde 2019.
         </p>
         <Button className="btn--default btn--hero">Fale comigo</Button>
+        <div className="icons__static">
+          <GithubIcon />
+          <LinkedinIcon />
+        </div>
+        <div className="email__static">
+          <p>diego.bezerra.martins@gmail.com</p>
+        </div>
       </section>
     </>
   );
