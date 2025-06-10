@@ -1,10 +1,10 @@
 export function Button({
   children,
   action = () => alert("clique"),
-  className = "btn--default",
+  className,
 }) {
   return (
-    <button className={className} onClick={() => action()}>
+    <button className={`btn--default ${className}`} onClick={() => action()}>
       {children}
     </button>
   );

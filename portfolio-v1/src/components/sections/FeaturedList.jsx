@@ -1,4 +1,4 @@
-import { Featured } from "./Featured";
+import { Featured } from "../Featured";
 
 export function FeaturedList() {
   return (
