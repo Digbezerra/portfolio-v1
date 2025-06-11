@@ -71,21 +71,19 @@ export function Jobs() {
                     isId ? "job__menu--item--active" : ""
                   }`}
                   onClick={() => handleSelectedItem(item.id)}
+                  key={item.id}
                 >
                   {item.name}
                 </li>
               );
             })}
-
-            {/* <li className="job__menu--item">dsb</li>
-            <li className="job__menu--item">fcl</li> */}
           </ul>
           <div className="job__description">
             {jobs.map((item) => {
               const isId = item.id === idSelected;
               if (isId) {
                 return (
-                  <>
+                  <div key={item.id}>
                     <div>
                       <p className="title__job">{item.role}</p>
                       <p className="job__period">
@@ -96,11 +94,13 @@ export function Jobs() {
                     <ul className="job__ul">
                       {item.description.map((item) => {
                         return (
-                          <li className="job__li job__li--tasks">{item}</li>
+                          <li className="job__li job__li--tasks" key={item}>
+                            {item}
+                          </li>
                         );
                       })}
                     </ul>
-                  </>
+                  </div>
                 );
               }
             })}
