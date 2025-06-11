@@ -78,12 +78,12 @@ export function Jobs() {
               );
             })}
           </ul>
-          <div className="job__description">
+          <div>
             {jobs.map((item) => {
               const isId = item.id === idSelected;
               if (isId) {
                 return (
-                  <div key={item.id}>
+                  <div className="job__description" key={item.id}>
                     <div>
                       <p className="title__job">{item.role}</p>
                       <p className="job__period">
