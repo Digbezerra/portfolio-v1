@@ -6,14 +6,37 @@ export function Footer() {
     <>
       <footer className="footer">
         <div className="footer__icons">
-          <GithubIcon />
-          <LinkedinIcon />
+          <a
+            href="https://github.com/Digbezerra"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GithubIcon />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/diego-bezerra-martins-670561106"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedinIcon />
+          </a>
         </div>
-        <a className="footer__email" href="#email">
+        <a
+          href="mailto:diego.bezerra.martins@gmail.com"
+          aria-label="Envie um e-mail para diego.bezerra.martins@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer__link"
+        >
           diego.bezerra.martins@gmail.com
         </a>
         <p className="footer__paragraph">Desenvolvido por Diego Bezerra</p>
-        <a className="footer__link" href="https://brittanychiang.com/">
+        <a
+          className="footer__link"
+          href="https://brittanychiang.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Based on UI Design by Brittany Chiang
         </a>
       </footer>

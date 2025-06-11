@@ -47,6 +47,16 @@ export function Head({ children }) {
               Currículo
             </Button>
           </li>
+          <li className="nav__li">
+            <a
+              href="mailto:diego.bezerra.martins@gmail.com"
+              aria-label="Envie um e-mail para diego.bezerra.martins@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="btn-cv--nav">Me dê um alô!</Button>
+            </a>
+          </li>
         </ul>
       </nav>
       <Button className="btn-mobile--nav" action={onOpenMenu}>

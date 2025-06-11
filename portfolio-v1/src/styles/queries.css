@@ -97,6 +97,13 @@
     visibility: hidden;
   }
 
+  .footer__icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .btn-cv--nav {
     display: block;
   }
@@ -217,6 +224,7 @@
     display: block;
     font-size: var(--font-size-xs);
     margin-bottom: 3rem;
+    transition: var(--transition);
   }
 
   .footer__email {
@@ -230,13 +238,6 @@
 
   .section-jobs__content {
     flex-direction: column;
-  }
-
-  .footer__icons {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 3rem;
   }
 }
 

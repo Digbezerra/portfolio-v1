@@ -16,7 +16,14 @@ export function Contact() {
           ducimus maxime temporibus facere corporis quos iure sunt accusantium
           eum. Voluptatibus!
         </p>
-        <Button className="btn--hero">Me dê um alô!</Button>
+        <a
+          href="mailto:diego.bezerra.martins@gmail.com"
+          aria-label="Envie um e-mail para diego.bezerra.martins@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="btn--hero">Me dê um alô!</Button>
+        </a>
       </section>
     </>
   );

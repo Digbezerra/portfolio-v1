@@ -38,7 +38,7 @@
   --border-radius: 12px;
   --nav-height: 100px;
 
-  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   /*  SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
@@ -192,7 +192,7 @@ section {
 
 .nav__li:hover {
   transition: var(--transition);
-  color: var(--blue-vivid);
+  color: var(--blue-light);
 }
 
 .btn--default {
@@ -201,12 +201,21 @@ section {
   padding: 1rem 1.5rem;
   border-radius: var(--border-radius);
   font-family: inherit;
+  transition: var(--transition);
 }
 
 .btn--default:hover {
   color: var(--blue-vivid);
   border: 2px solid var(--blue-vivid);
-  transition: var(--transition);
+  transform: translateY(-4px) translateX(-4px);
+  box-shadow: 4px 4px 0px var(--blue-vivid);
+}
+
+.btn--default:active {
+  color: var(--blue-vivid);
+  border: 2px solid var(--blue-vivid);
+  transform: translateY(0px);
+  box-shadow: unset;
 }
 
 .btn-desktop--nav {
@@ -244,8 +253,10 @@ section {
   cursor: pointer;
 }
 
-.icons__static .icon__github:hover {
+.icons__static .icon__github:hover,
+.icons__static .icon__linkedin:hover {
   color: var(--blue-light);
+  transform: translateY(-4px);
 }
 
 .email__static:hover {
@@ -634,6 +645,7 @@ SECTION FEATURED
 .section-contact {
   text-align: center;
   max-width: 70rem;
+  margin-bottom: 30rem;
 }
 
 .contact__paragraph {
@@ -704,6 +716,10 @@ SECTION FEATURED
   color: var(--gray);
   margin-bottom: 2rem;
   font-size: var(--font-size-sm);
+}
+
+.footer__icons {
+  display: none;
 }
 
 /*

@@ -13,13 +13,39 @@ export function Hero() {
           Criando experiências web performáticas, acessíveis e escaláveis com
           foco na experiência do usuário desde 2019.
         </p>
-        <Button className="btn--default btn--hero">Fale comigo</Button>
+        <a
+          href="mailto:diego.bezerra.martins@gmail.com"
+          aria-label="Envie um e-mail para diego.bezerra.martins@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button className="btn--default btn--hero">Fale comigo</Button>
+        </a>
         <div className="icons__static">
-          <GithubIcon />
-          <LinkedinIcon />
+          <a
+            href="https://github.com/Digbezerra"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GithubIcon />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/diego-bezerra-martins-670561106"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedinIcon />
+          </a>
         </div>
         <div className="email__static">
-          <p>diego.bezerra.martins@gmail.com</p>
+          <a
+            href="mailto:diego.bezerra.martins@gmail.com"
+            aria-label="Envie um e-mail para diego.bezerra.martins@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            diego.bezerra.martins@gmail.com
+          </a>
         </div>
       </section>
     </>
