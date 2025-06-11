@@ -1,4 +1,4 @@
-import { NavBar } from "./components/NavBar";
+import { Head } from "./components/sections/Head";
 import { Logo } from "./components/Logo";
 import { Hero } from "./components/sections/Hero";
 import { MainContainer } from "./components/MainContainer";
@@ -7,13 +7,14 @@ import { Jobs } from "./components/sections/Jobs";
 import { FeaturedList } from "./components/sections/FeaturedList";
 import { ProjectCourses } from "./components/sections/ProjectCourses";
 import { Contact } from "./components/sections/Contact";
+import { Footer } from "./components/sections/Footer";
 
 function App() {
   return (
     <>
-      <NavBar>
+      <Head>
         <Logo imgName={"logo-white.png"} altText={"Dig dev logo"} />
-      </NavBar>
+      </Head>
       <MainContainer>
         <Hero />
         <About />
@@ -21,6 +22,7 @@ function App() {
         <FeaturedList />
         <ProjectCourses />
         <Contact />
+        <Footer />
       </MainContainer>
     </>
   );

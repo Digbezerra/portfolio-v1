@@ -53,6 +53,8 @@ function FeaturedContentRight() {
             <li className="stack__li">html</li>
             <li className="stack__li">css</li>
             <li className="stack__li">GraphQL</li>
+            <li className="stack__li">GraphQL</li>
+            <li className="stack__li">GraphQL</li>
           </ul>
         </div>
         <div className="featured__image">

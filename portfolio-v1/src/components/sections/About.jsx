@@ -3,7 +3,10 @@ import { StackList } from "../StackList";
 export function About() {
   return (
     <>
-      <section className="margin-bottom--regular section-about">
+      <section
+        className="section-about margin-bottom--regular padding-top--regular"
+        id="about"
+      >
         <div className="section-about__container">
           <div className="section__title">
             <span className="title__number">01. </span>
