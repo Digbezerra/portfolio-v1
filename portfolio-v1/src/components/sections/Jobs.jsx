@@ -1,7 +1,10 @@
 export function Jobs() {
   return (
     <>
-      <section className="section-jobs margin-bottom--regular">
+      <section
+        className="section-jobs margin-bottom--regular padding-top--regular"
+        id="jobs"
+      >
         <div className="section__title">
           <span className="title__number">02. </span>
           <h2>Experiências relevantes</h2>
