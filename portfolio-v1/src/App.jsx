@@ -1,4 +1,4 @@
-import { NavBar } from "./components/NavBar";
+import { Head } from "./components/sections/Head";
 import { Logo } from "./components/Logo";
 import { Hero } from "./components/sections/Hero";
 import { MainContainer } from "./components/MainContainer";
@@ -12,9 +12,9 @@ import { Footer } from "./components/sections/Footer";
 function App() {
   return (
     <>
-      <NavBar>
+      <Head>
         <Logo imgName={"logo-white.png"} altText={"Dig dev logo"} />
-      </NavBar>
+      </Head>
       <MainContainer>
         <Hero />
         <About />
