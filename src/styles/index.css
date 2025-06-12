@@ -14,13 +14,13 @@
   --bg-primary-opacity: #0a192ff1;
 
   --color-text-light: #e8eef1;
-  --color-text-dark: ##0a192f;
+  --color-text-dark: #0a192f;
 
   --font-sans: "Inter", -apple-system, system-ui, sans-serif;
   --font-mono: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
-  --font-size-xxs: 12px;
-  --font-size-xs: 13px;
+  --font-size-xxs: 1.2rem;
+  --font-size-xs: 1.3rem;
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 18px;
