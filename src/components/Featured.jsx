@@ -19,14 +19,14 @@ function FeaturedContentLeft() {
               laudantium, temporibus enim!
             </p>
           </div>
-          <ul className="stack__ul--left">
-            <li className="stack__li">React</li>
-            <li className="stack__li">Javascript</li>
-            <li className="stack__li">html</li>
-            <li className="stack__li">css</li>
-            <li className="stack__li">GraphQL</li>
-          </ul>
         </div>
+        <ul className="stack__ul--left">
+          <li className="stack__li">React</li>
+          <li className="stack__li">Javascript</li>
+          <li className="stack__li">html</li>
+          <li className="stack__li">css</li>
+          <li className="stack__li">GraphQL</li>
+        </ul>
       </div>
     </>
   );
@@ -47,15 +47,6 @@ function FeaturedContentRight() {
               laudantium, temporibus enim!
             </p>
           </div>
-          <ul className="stack__ul">
-            <li className="stack__li">React</li>
-            <li className="stack__li">Javascript</li>
-            <li className="stack__li">html</li>
-            <li className="stack__li">css</li>
-            <li className="stack__li">GraphQL</li>
-            <li className="stack__li">GraphQL</li>
-            <li className="stack__li">GraphQL</li>
-          </ul>
         </div>
         <div className="featured__image">
           <img
@@ -63,6 +54,15 @@ function FeaturedContentRight() {
             alt="profile photo placeholder"
           />
         </div>
+        <ul className="stack__ul">
+          <li className="stack__li">React</li>
+          <li className="stack__li">Javascript</li>
+          <li className="stack__li">html</li>
+          <li className="stack__li">css</li>
+          <li className="stack__li">GraphQL</li>
+          <li className="stack__li">GraphQL</li>
+          <li className="stack__li">GraphQL</li>
+        </ul>
       </div>
     </>
   );

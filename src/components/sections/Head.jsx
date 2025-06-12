@@ -40,7 +40,9 @@ export function Head({ children }) {
             </a>
           </li>
           <li className="nav__li">
-            <Button className="btn-desktop--nav">Currículo</Button>
+            <Button className="btn-desktop--nav" action={onOpenMenu}>
+              Currículo
+            </Button>
           </li>
           <li className="nav__li">
             <Button className="btn-cv--nav" action={onOpenMenu}>
