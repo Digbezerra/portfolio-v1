@@ -13,6 +13,9 @@
     width: 100%;
   } */
 
+  .btn--default__hero {
+    width: 30rem;
+  }
   .section-projects {
     width: 100%;
   }
@@ -226,10 +229,6 @@
     margin-bottom: 10rem;
   }
 
-  .btn--hero {
-    width: 100%;
-  }
-
   .section-jobs__content {
     flex-direction: column;
   }
@@ -256,6 +255,7 @@
 
   .featured__image {
     grid-row: 2;
+    display: flex;
   }
 
   .stack__ul {
