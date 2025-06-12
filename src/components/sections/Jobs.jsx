@@ -95,7 +95,7 @@ export function Jobs() {
                       {item.description.map((item) => {
                         return (
                           <li className="job__li job__li--tasks" key={item}>
-                            {item}
+                            <p>{item}</p>
                           </li>
                         );
                       })}
