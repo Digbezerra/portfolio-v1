@@ -29,11 +29,6 @@
   .section-projects {
     width: 100%;
   }
-
-  .profile-image {
-    width: 280px;
-    height: 240px;
-  }
 }
 
 /**************************/
@@ -84,6 +79,11 @@
     pointer-events: none;
     /* Hide it from screen readers*/
     visibility: hidden;
+  }
+
+  .profile-image {
+    filter: sepia(0);
+    box-shadow: 4px 4px 0px var(--blue-vivid);
   }
 
   .footer__icons {

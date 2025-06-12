@@ -50,7 +50,7 @@ function FeaturedContentRight() {
         </div>
         <div className="featured__image">
           <img
-            src="images/placeholder_600x400.png"
+            src="images/nestle-ate-voce.webp"
             alt="profile photo placeholder"
           />
         </div>
