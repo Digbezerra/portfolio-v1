@@ -38,6 +38,9 @@
 /**************************/
 
 @media (max-width: 59em) {
+  p {
+    font-size: var(--font-size-lg);
+  }
   .projects__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -243,6 +246,7 @@
   .featured__description--container,
   .featured__description--container--left {
     width: 100%;
+    min-height: 70%;
   }
 
   .featured__description--container--left {
