@@ -1,80 +1,70 @@
-function FeaturedContentLeft() {
+function FeaturedContentLeft({ data }) {
   return (
     <>
       <div className="featured__container--left">
         <div className="featured__image">
-          <img
-            src="images/placeholder_600x400.png"
-            alt="profile photo placeholder"
-          />
+          <a href={data.url} target="_blank" rel="noopener noreferrer">
+            <img src={`images/${data.image}`} alt="project thumbnail" />
+          </a>
         </div>
         <div className="featured__content">
-          <p className="title__project">Projetos em destaque</p>
-          <p className="subtitle__project">Projetos em destaque</p>
+          <p className="title__project">{data.sub_title}</p>
+          <p className="subtitle__project">{data.name}</p>
           <div className="featured__description--container--left">
-            <p className="featured__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut amet,
-              excepturi, vero atque quidem sapiente ab cumque deserunt provident
-              beatae aperiam ad placeat suscipit laboriosam autem magni
-              laudantium, temporibus enim!
-            </p>
+            <p className="featured__text">{data.description}</p>
           </div>
         </div>
         <ul className="stack__ul--left">
-          <li className="stack__li">React</li>
-          <li className="stack__li">Javascript</li>
-          <li className="stack__li">html</li>
-          <li className="stack__li">css</li>
-          <li className="stack__li">GraphQL</li>
+          {data["stack"].map((item) => {
+            return (
+              <li className="stack__li" key={data.id}>
+                {item}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </>
   );
 }
 
-function FeaturedContentRight() {
+function FeaturedContentRight({ data }) {
   return (
     <>
       <div className="featured__container">
         <div className="featured__content">
-          <p className="title__project">Projetos em destaque</p>
-          <p className="subtitle__project">Projetos em destaque</p>
+          <p className="title__project">{data.sub_title}</p>
+          <p className="subtitle__project">{data.name}</p>
           <div className="featured__description--container">
-            <p className="featured__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut amet,
-              excepturi, vero atque quidem sapiente ab cumque deserunt provident
-              beatae aperiam ad placeat suscipit laboriosam autem magni
-              laudantium, temporibus enim!
-            </p>
+            <p className="featured__text">{data.description}</p>
           </div>
         </div>
         <div className="featured__image">
-          <img
-            src="images/placeholder_600x400.png"
-            alt="profile photo placeholder"
-          />
+          <a href={data.url} target="_blank" rel="noopener noreferrer">
+            <img src={`images/${data.image}`} alt="project thumbnail" />
+          </a>
         </div>
         <ul className="stack__ul">
-          <li className="stack__li">React</li>
-          <li className="stack__li">Javascript</li>
-          <li className="stack__li">html</li>
-          <li className="stack__li">css</li>
-          <li className="stack__li">GraphQL</li>
-          <li className="stack__li">GraphQL</li>
-          <li className="stack__li">GraphQL</li>
+          {data["stack"].map((item) => {
+            return (
+              <li className="stack__li" key={data.id}>
+                {item}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </>
   );
 }
 
-export function Featured({ position = "right" }) {
+export function Featured({ position = "right", data }) {
   return (
     <>
       {position === "right" ? (
-        <FeaturedContentRight />
+        <FeaturedContentRight data={data} />
       ) : (
-        <FeaturedContentLeft />
+        <FeaturedContentLeft data={data} />
       )}
     </>
   );

@@ -15,30 +15,27 @@ export function About() {
           <div className="section-about__content">
             <div>
               <p className="paragraph">
-                Olá, sou o Diego (Dig) e construo ferramentas focadas em
-                acessibilidade, experiência do usuário, escalabilidade e
-                performance.
+                Desenvolvedor Frontend com mais de 4 anos de experiência,
+                incluindo atuação como Engenheiro de Software Jr. em projetos de
+                e-commerce B2C e B2B para grandes empresas como Nestlé, Ambev,
+                Reckitt e Hortifrutti. Especialista em React.js, PWA, Adobe
+                Commerce (Magento) e integração com times globais.
               </p>
               <p className="paragraph">
-                Atuei como Frontend developer durante cinco anos incríveis, onde
-                tive a oportunidade de trabalhar com diversas empresas
-                multinacionais, como: Ambev, Hortifrutti, Heckitt, Adobe e
-                Nestlé.
-              </p>
-              <p className="paragraph">
-                Exerci durante 1 ano e meio a função de Engenheiro de Software
-                Jr, atuei como tech lead de frontend no projeto Nestlé Até Você,
-                um grande projeto B2B onde eu era responsável por arquitetar e
-                gerenciar as implementações do time de frontend.
-              </p>
-              <p className="paragraph">
-                Fui mentor de diversos devs incríveis e aprendi muito com isso,
-                hoje sinto que sou um profissional mais completo.
+                Reconhecido por liderança técnica, comunicação eficiente,
+                mentoria de desenvolvedores iniciantes e forte foco em
+                performance e experiência do usuário. Colaborei diretamente com
+                equipes multinacionais em inglês, contribuindo para a entrega de
+                soluções robustas e modernas. Estou em busca de oportunidades
+                para continuar gerando valor através de interfaces ricas,
+                acessíveis e eficientes, sempre com espírito colaborativo e
+                vontade de evoluir.
               </p>
             </div>
+
             <img
               className="profile-image"
-              src="images/placeholder_600x400.png"
+              src="images/selfie.png"
               alt="profile photo placeholder"
             />
           </div>
