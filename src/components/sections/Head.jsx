@@ -40,14 +40,24 @@ export function Head({ children }) {
             </a>
           </li>
           <li className="nav__li">
-            <Button className="btn-desktop--nav" action={onOpenMenu}>
+            <a
+              href="https://diegobezerra.netlify.app/diego-bezerra-2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn--default btn-desktop--nav"
+            >
               Currículo
-            </Button>
+            </a>
           </li>
           <li className="nav__li">
-            <Button className="btn-cv--nav" action={onOpenMenu}>
+            <a
+              href="https://diegobezerra.netlify.app/diego-bezerra-2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn--default btn-cv--nav"
+            >
               Currículo
-            </Button>
+            </a>
           </li>
           <li className="nav__li">
             <a
