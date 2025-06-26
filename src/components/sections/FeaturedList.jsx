@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Featured } from "../Featured";
 
 const jobsData = [
@@ -44,24 +45,38 @@ const jobsData = [
 ];
 
 export function FeaturedList() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <>
       <section
         className="section-featured margin-bottom--regular padding-top--regular"
         id="featured"
+        data-aos="fade-up"
+        data-aos-duration="500"
       >
         <div className="section__title">
           <span className="title__number">03. </span>
           <h2>Principais Projetos</h2>
         </div>
-        {jobsData.map((item) => {
-          return (
-            <Featured
-              position={item.id % 2 === 0 ? "right" : "left"}
-              data={item}
-            />
-          );
-        })}
+        <div className={isMobile ? "section-featured__mobile" : ""}>
+          {jobsData.map((item) => {
+            return (
+              <Featured
+                position={item.id % 2 === 0 ? "right" : "left"}
+                data={item}
+                key={item.description}
+              />
+            );
+          })}
+        </div>
       </section>
     </>
   );
