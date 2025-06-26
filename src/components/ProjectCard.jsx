@@ -38,7 +38,7 @@ export function ProjectCard({ data }) {
         <ul className="stack__ul">
           {data["stack"].map((item) => {
             return (
-              <li className="stack__li" key={data.id}>
+              <li className="stack__li" key={item}>
                 {item}
               </li>
             );
