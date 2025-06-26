@@ -24,7 +24,6 @@ export function Hero() {
           aria-label="Envie um e-mail para diego.bezerra.martins@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          data-aos="fade-down"
         >
           <Button className="btn--default btn--hero">Fale comigo</Button>
         </a>
