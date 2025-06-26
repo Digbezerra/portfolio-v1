@@ -6,6 +6,8 @@ export function Contact() {
       <section
         className="section-contact margin-bottom--regular padding-top--regular"
         id="contact"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
         <p className="title__number">04.</p>
         <h3 className="contact__title--h3">Contato</h3>

@@ -4,6 +4,8 @@ export function About() {
   return (
     <>
       <section
+        data-aos="fade-up"
+        data-aos-duration="500"
         className="section-about margin-bottom--regular padding-top--regular"
         id="about"
       >

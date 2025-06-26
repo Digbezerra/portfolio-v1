@@ -4,7 +4,7 @@ import { LinkedinIcon } from "../icons/LinkedinIcon";
 export function Footer() {
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" data-aos="fade-up" data-aos-duration="500">
         <div className="footer__icons">
           <a
             href="https://github.com/Digbezerra"
@@ -30,6 +30,7 @@ export function Footer() {
         >
           diego.bezerra.martins@gmail.com
         </a>
+
         <p className="footer__paragraph">Desenvolvido por Diego Bezerra</p>
         <a
           className="footer__link"
@@ -39,6 +40,11 @@ export function Footer() {
         >
           Based on UI Design by Brittany Chiang
         </a>
+        <p className="footer__paragraph--copy">
+          Todos os direitos reservados aos proprietários dos projetos citados,
+          Webjump e empresas donas das marcas. Projetos desenvolvidos em caráter
+          de contratação trabalhista.
+        </p>
       </footer>
     </>
   );
