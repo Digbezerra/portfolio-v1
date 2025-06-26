@@ -23,7 +23,7 @@ function FeaturedContentLeft({ data }) {
         <ul className="stack__ul--left">
           {data["stack"].map((item) => {
             return (
-              <li className="stack__li" key={data.name}>
+              <li className="stack__li" key={item}>
                 {item}
               </li>
             );
@@ -57,7 +57,7 @@ function FeaturedContentRight({ data }) {
         <ul className="stack__ul">
           {data["stack"].map((item) => {
             return (
-              <li className="stack__li" key={data.description}>
+              <li className="stack__li" key={item}>
                 {item}
               </li>
             );
@@ -106,10 +106,10 @@ export function Featured({ position = "right", data }) {
   }, []);
 
   if (isMobile) {
-    return <FeaturedMobile data={data} />;
+    return <FeaturedMobile data={data} key={data.id} />;
   } else if (!isMobile && position === "right") {
-    return <FeaturedContentRight data={data} />;
+    return <FeaturedContentRight data={data} key={data.id} />;
   } else if (!isMobile && position !== "right") {
-    return <FeaturedContentLeft data={data} />;
+    return <FeaturedContentLeft data={data} key={data.id} />;
   }
 }
