@@ -11,16 +11,14 @@ export function Contact() {
         <h3 className="contact__title--h3">Contato</h3>
         <h1 className="contact__title--h1">Fale Comigo</h1>
         <p className="contact__paragraph">
-          🚀 Aberto a novas oportunidades!
-          <br /> Sou apaixonado por desenvolvimento web e mobile e estou pronto
-          para contribuir com minha experiência em projetos desafiadores. Tenho
-          certeza de que juntos podemos criar soluções incríveis e gerar
-          resultados reais. Me chame para um bate-papo, será um prazer
-          compartilhar mais sobre o que posso agregar ao seu projeto.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit accusamus
+          rerum est sequi culpa minima minus eaque vero cumque provident
+          voluptatibus, et quod sapiente dolores nobis ipsa necessitatibus quam
+          voluptatum.
         </p>
         <a
-          href="mailto:diego.bezerra.martins@gmail.com"
-          aria-label="Envie um e-mail para diego.bezerra.martins@gmail.com"
+          href="mailto:seu_email@email.com"
+          aria-label="Envie um e-mail para seu_email@email.com"
           target="_blank"
           rel="noopener noreferrer"
         >

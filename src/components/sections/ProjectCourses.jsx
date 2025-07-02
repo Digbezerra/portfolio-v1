@@ -1,50 +1,53 @@
 import { ProjectCard } from "../ProjectCard";
 
+//Estes dados representam os cursos e projetos extras que vc realizou
+//DESAFIO DE MELHORIAS: utilize alguma ferramenta de web server ou utilize a estrutura da sua ferramenta de build, e torne estes dados dinâmicos e escaláveis
+
+/*  
+id: number (sequencial, ou randomico),
+name: string (nome do curso/projeto),
+description: string (descrição do curso/projeto),
+course_url: string (url do curso/projeto)
+github_url: string (url do repositório),
+stack: array (stack utilizada no curso ["Figma", "Illustrator", "Photoshop", "Canva"]),
+*/
+
 const projectData = [
   {
     id: 1,
-    name: "UI Design: Design de interfaces focados em desenvolvimento web",
+    name: "Curso de como fazer um curso",
     description:
-      "Aprenda criar sites, landing pages e e-commerces com foco no usuário. Da teoria à pratica.",
-    course_url: "https://www.udemy.com/course/design-de-interfaces-web",
-    github_url: "",
-    stack: ["Figma", "Illustrator", "Photoshop", "Canva"],
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ratione officia fugit culpa atque quibusdam incidunt inventore sequi necessitatibus, aperiam et nesciunt doloremque? Voluptatibus obcaecati enim magni repellendus eius rerum.",
+    course_url: "https://urldocurso.com.br",
+    github_url: "https://urldorepositorio.com.br",
+    stack: ["tech 1", "tech 2", "tech 3", "Tech 4"],
   },
   {
     id: 2,
-    name: "The Complete JavaScript Course 2025: From Zero to Expert!",
+    name: "Curso de como fazer um curso",
     description:
-      "The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!",
-    course_url: "https://www.udemy.com/course/the-complete-javascript-course",
-    github_url: "https://github.com/Digbezerra/js-fundamentals",
-    stack: ["javascript", "html", "css"],
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ratione officia fugit culpa atque quibusdam incidunt inventore sequi necessitatibus, aperiam et nesciunt doloremque? Voluptatibus obcaecati enim magni repellendus eius rerum.",
+    course_url: "https://urldocurso.com.br",
+    github_url: "", //vazio o ícone some
+    stack: ["tech 1", "tech 2", "tech 3", "Tech 4"],
   },
   {
     id: 3,
-    name: "The Ultimate React Course 2025: React, Next.js, Redux & More",
+    name: "Curso de como fazer um curso",
     description:
-      "Master modern React from beginner to advanced! Next.js, Context API, React Query, Redux, Tailwind, advanced patterns",
-    course_url: "https://www.udemy.com/course/the-ultimate-react-course",
-    github_url: "https://github.com/Digbezerra/Reactjs",
-    stack: [
-      "Javascript",
-      "JSX",
-      "CSS",
-      "Next.js",
-      "Context API",
-      "React Query",
-      "Redux",
-      "Tailwind",
-    ],
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ratione officia fugit culpa atque quibusdam incidunt inventore sequi necessitatibus, aperiam et nesciunt doloremque? Voluptatibus obcaecati enim magni repellendus eius rerum.",
+    course_url: "https://urldocurso.com.br",
+    github_url: "https://urldorepositorio.com.br",
+    stack: ["tech 1", "tech 2", "tech 3", "Tech 4"],
   },
   {
     id: 4,
-    name: "UI Design: Design de interfaces focados em desenvolvimento web",
+    name: "Curso de como fazer um curso",
     description:
-      "Aprenda criar sites, landing pages e e-commerces com foco no usuário. Da teoria à pratica.",
-    course_url: "https://www.udemy.com/course/design-de-interfaces-web",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ratione officia fugit culpa atque quibusdam incidunt inventore sequi necessitatibus, aperiam et nesciunt doloremque? Voluptatibus obcaecati enim magni repellendus eius rerum.",
+    course_url: "https://urldocurso.com.br",
     github_url: "",
-    stack: ["Figma", "Illustrator", "Photoshop", "Canva"],
+    stack: ["tech 1", "tech 2", "tech 3", "Tech 4"],
   },
 ];
 

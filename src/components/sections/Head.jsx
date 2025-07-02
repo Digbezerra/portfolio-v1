@@ -41,7 +41,7 @@ export function Head({ children }) {
           </li>
           <li className="nav__li">
             <a
-              href="https://diegobezerra.netlify.app/diego-bezerra-2025.pdf"
+              href="https://diegobezerra.netlify.app/diego-bezerra-2025.pdf" //insira o seu currículo pdf na pasta public, no meu caso eu utilizei a netlify para build, verifique com a sua ferramenta como isso deve ser feito
               target="_blank"
               rel="noopener noreferrer"
               className="btn--default btn-desktop--nav"
@@ -63,8 +63,8 @@ export function Head({ children }) {
 
           <li className="nav__li nav__li--mobile">
             <a
-              href="mailto:diego.bezerra.martins@gmail.com"
-              aria-label="Envie um e-mail para diego.bezerra.martins@gmail.com"
+              href="mailto:seu_email@email.com"
+              aria-label="Envie um e-mail para seu_email@email.com"
               target="_blank"
               rel="noopener noreferrer"
             >

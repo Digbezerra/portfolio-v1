@@ -1,46 +1,58 @@
 import { useState, useEffect } from "react";
 import { Featured } from "../Featured";
 
+//Estes dados representam os projetos relevantes que você desenvolve ou participou, insira as suas informações
+//DESAFIO DE MELHORIAS: utilize alguma ferramenta de web server ou utilize a estrutura da sua ferramenta de build, e torne estes dados dinâmicos e escaláveis
+
+/*  id: number (sequencial, ou randomico),
+    name: string (nome do projeto),
+    sub_title: string (subtítulo),
+    description: string (descrição detalhada)
+    image: string (caminho para imagem de fundo "placeholder_600x400.png", insira na pasta /images),
+    url: string ("https://www.sitedoprojeto.com.br/"),
+    stack: array (stack utilizada: ["react", "javascript", "html", "css", "GraphQL", "Adobe Commerce"]),
+*/
+
 const jobsData = [
   {
     id: 1,
-    name: "Nestlé Até você",
-    sub_title: "E-commerce B2B",
+    name: "Projeto 01",
+    sub_title: "plataforma de e-commerce",
     description:
-      "Projeto de E-commerce B2B, a maior plataforma de vendas atacado e varejo de produtos Nestlé da América Latina, responsável por um faturamento anual de quase um bilhão de reais. Fui responsável pela atuação do time de frontend, liderando e tomando decisões de arquitetura e melhorias contínuas.",
-    image: "nestle-ate-voce.webp",
-    url: "https://www.nestleatevoce.com.br/",
-    stack: ["react", "javascript", "html", "css", "GraphQL", "Adobe Commerce"],
+      "Lorem ipsum dolor sitdas amet consectetur adipisicing elit. Illo nihil totam corporis voluptatum, id aliquam? Natus et impedit esse quod! Maiores ullam iste debitis iure id repudiandae ipsam rerum ratione?",
+    image: "placeholder_600x400.png",
+    url: "https://diegobezerra.netlify.app/",
+    stack: ["lorem", "ipsum", "dolor", "sit", "amet", "consecteur"],
   },
   {
     id: 2,
-    name: "HortiFrutti | Natural da Terra",
-    sub_title: "E-commerce B2C",
+    name: "Projeto 02",
+    sub_title: "plataforma de e-commerce",
     description:
-      "E-commerce B2C, focado em alimentação saudável, vendas de produtos de hortifruti e orgânicos em geral. Atuei como desenvolvedor Front End.",
-    image: "hortifrutti.webp",
-    url: "https://www.naturaldaterra.com.br/",
-    stack: ["react", "javascript", "html", "css", "GraphQL", "Adobe Commerce"],
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil totam corporis voluptatum, id aliquam? Natus et impedit esse quod! Maiores ullam iste debitis iure id repudvaqiandae ipsam rerum ratione?",
+    image: "placeholder_600x400.png",
+    url: "https://diegobezerra.netlify.app/",
+    stack: ["lorem", "ipsum", "dolor", "sit", "amet", "consecteur"],
   },
   {
     id: 3,
-    name: "Sustagen",
-    sub_title: "Catálogo",
+    name: "Projeto 03",
+    sub_title: "plataforma de e-commerce",
     description:
-      "Website interativo, agregador de links de compras de produtos. Vitrine digital como um marketplace para os produtos Sustagen",
-    image: "sustagen.webp",
-    url: "https://www.sustagenadultos.com.br/",
-    stack: ["html", "css", "scss", "drupal", "javascript"],
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil totam corporis voluptatum, id aliquam? Natus et impedit esse quod! Maiores ullam iste debitis iure id repudiandae xacipsam rerum ratione?",
+    image: "placeholder_600x400.png",
+    url: "https://diegobezerra.netlify.app/",
+    stack: ["lorem", "ipsum", "dolor", "sit", "amet", "consecteur"],
   },
   {
     id: 4,
-    name: "Ambev",
-    sub_title: "Sites institucionais",
+    name: "Projeto 04",
+    sub_title: "plataforma de e-commerce",
     description:
-      "Construção de CMS (Drupal) estrutural para facilitar a construção de hot sites para promoção das principais marcas da Ambev, Clube n1 Brahma, Brahma Duplo Malte (Live Bruno e Marrone), Skol Beats 150 BPM, Stella Artois, Corona Follow the sun, Antarctica Tônica, entre outras.",
-    image: "ambev.webp",
-    url: "https://www.ecommercebrasil.com.br/noticias/escolhida-por-ambev-webjump-e-responsavel-por-estrutura-multidisciplinar-que-agrega-marketing-e-tecnologia",
-    stack: ["html", "css", "scss", "drupal", "javascript"],
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil totam corporis voluptatum, id aliquam? Natus et impedit esse quod! Maiores ullam iste debitis iure id repudiandaecaxca ipsam rerum ratione?",
+    image: "placeholder_600x400.png",
+    url: "https://diegobezerra.netlify.app/",
+    stack: ["lorem", "ipsum", "dolor", "sit", "amet", "consecteur"],
   },
 ];
 

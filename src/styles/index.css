@@ -1,17 +1,21 @@
 :root {
-  --bg-primary: #0a192f;
-  --bg-secondary: #112240;
-  --blue-navy: #203e74;
-  --blue-cobalt: #004aad;
-  --blue-vivid: #007bff;
-  --blue-light: #00c2ff;
-  --blue-lighter: #bfe4f9;
+  /*
+    é interessante que você mude a paleta de cores para que não fique idêntico ao disponibilizado, modifique as variáveis para as cores que você deseja e pronto!
+
+    DESAFIO: note que este arquivo é grande, isso foi feito de propósito, tente utilizar técnicas modernas de CSS como: styled-components, css modules, tailwind, etc.
+  */
+
+  --bg-primary: #252525;
+  --bg-secondary: #202020;
+  --yellow-vivid: #f59f00;
+  --yellow-light: #ffd43b;
+  --yellow-lighter: #ffec99;
   --gray: #8892b0;
   --gray-light: #e8eef1;
   --white: #fff;
   --black: #000;
 
-  --bg-primary-opacity: #0a192ff1;
+  --bg-primary-opacity: #000000d8;
 
   --color-text-light: #e8eef1;
   --color-text-dark: #0a192f;
@@ -187,18 +191,18 @@ section {
 .nav__span {
   font-family: var(--font-mono);
   font-weight: 600;
-  color: var(--blue-light);
+  color: var(--yellow-light);
   margin-right: 4px;
 }
 
 .nav__li:hover {
   transition: var(--transition);
-  color: var(--blue-light);
+  color: var(--yellow-light);
 }
 
 .btn--default {
-  color: var(--blue-light);
-  border: 2px solid var(--blue-light);
+  color: var(--yellow-light);
+  border: 2px solid var(--yellow-light);
   padding: 1rem 1.5rem;
   border-radius: var(--border-radius);
   font-family: inherit;
@@ -206,15 +210,15 @@ section {
 }
 
 .btn--default:hover {
-  color: var(--blue-vivid);
-  border: 2px solid var(--blue-vivid);
+  color: var(--yellow-vivid);
+  border: 2px solid var(--yellow-vivid);
   transform: translateY(-4px) translateX(-4px);
-  box-shadow: 4px 4px 0px var(--blue-vivid);
+  box-shadow: 4px 4px 0px var(--yellow-vivid);
 }
 
 .btn--default:active {
-  color: var(--blue-vivid);
-  border: 2px solid var(--blue-vivid);
+  color: var(--yellow-vivid);
+  border: 2px solid var(--yellow-vivid);
   transform: translateY(0px);
   box-shadow: unset;
 }
@@ -256,12 +260,12 @@ section {
 
 .icons__static .icon__github:hover,
 .icons__static .icon__linkedin:hover {
-  color: var(--blue-light);
+  color: var(--yellow-light);
   transform: translateY(-4px);
 }
 
 .email__static:hover {
-  color: var(--blue-light);
+  color: var(--yellow-light);
 }
 
 .email__static {
@@ -288,7 +292,7 @@ section {
 .title--h2 {
   font-family: var(--font-sans);
   font-size: var(--font-size-subtitle);
-  color: var(--blue-lighter);
+  color: var(--yellow-lighter);
   margin-bottom: 3rem;
 }
 
@@ -299,7 +303,7 @@ section {
 
 .text--featured {
   font-size: var(--font-size-md);
-  color: var(--blue-light);
+  color: var(--yellow-light);
   font-family: var(--font-mono);
   margin-bottom: 1rem;
 }
@@ -338,7 +342,7 @@ section {
 }
 
 .title__number {
-  color: var(--blue-light);
+  color: var(--yellow-light);
   font-family: var(--font-mono);
 }
 
@@ -361,7 +365,7 @@ section {
   position: relative;
   width: 200px;
   height: 1px;
-  background-color: var(--blue-light);
+  background-color: var(--yellow-light);
   margin-right: auto;
 }
 
@@ -378,7 +382,7 @@ section {
 }
 
 .profile-image:hover {
-  box-shadow: 4px 4px 0px var(--blue-vivid);
+  box-shadow: 4px 4px 0px var(--yellow-vivid);
   transform: translateY(-4px) translateX(-2px);
   filter: sepia(0);
 }
@@ -411,7 +415,7 @@ section {
 .stacklist__li::before,
 .job__li::before {
   content: "\25B9";
-  color: var(--blue-light);
+  color: var(--yellow-light);
   margin-right: 1rem;
 }
 
@@ -436,7 +440,7 @@ SECTION JOBS
 .job__menu {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--blue-light);
+  border-left: 1px solid var(--yellow-light);
   height: fit-content;
 }
 
@@ -452,13 +456,13 @@ SECTION JOBS
 }
 
 .job__menu--item:hover {
-  color: var(--blue-light);
+  color: var(--yellow-light);
 }
 
 .job__menu--item--active {
-  color: var(--blue-light);
+  color: var(--yellow-light);
   background-color: var(--bg-secondary);
-  border-left: 2px solid var(--blue-light);
+  border-left: 2px solid var(--yellow-light);
   cursor: pointer;
 }
 
@@ -534,7 +538,7 @@ SECTION FEATURED
 
 .title__project {
   font-size: var(--font-size-md);
-  color: var(--blue-light);
+  color: var(--yellow-light);
   font-family: var(--font-mono);
   margin-bottom: 1rem;
 }
@@ -553,7 +557,7 @@ SECTION FEATURED
 
 .featured__description--container {
   padding: 1rem 2rem;
-  background-color: #004bad93;
+  background-color: var(--bg-secondary);
   width: 150%;
   border-radius: 8px;
   margin-right: auto;
@@ -561,7 +565,7 @@ SECTION FEATURED
 
 .featured__description--container--left {
   padding: 1rem 2rem;
-  background-color: #004bad93;
+  background-color: var(--bg-secondary);
   width: 150%;
   border-radius: 8px;
   margin-left: -50%;
@@ -633,7 +637,7 @@ SECTION FEATURED
 }
 
 .projects__item {
-  background-color: #112240;
+  background-color: var(--bg-secondary);
   border-radius: 8px;
   padding: 3rem;
   display: flex;
@@ -653,7 +657,7 @@ SECTION FEATURED
 }
 
 .icon:hover {
-  color: var(--blue-light);
+  color: var(--yellow-light);
 }
 
 .icon__folder {
@@ -696,7 +700,7 @@ SECTION FEATURED
 
 .title__number {
   font-size: var(--font-size-xxl);
-  color: var(--blue-light);
+  color: var(--yellow-light);
   font-family: var(--font-mono);
 }
 
@@ -713,7 +717,7 @@ SECTION FEATURED
   position: absolute;
   width: 200px;
   height: 1px;
-  background-color: var(--blue-light);
+  background-color: var(--yellow-light);
   margin-right: auto;
   top: 50%;
   right: 70%;
@@ -725,7 +729,7 @@ SECTION FEATURED
   position: absolute;
   width: 200px;
   height: 1px;
-  background-color: var(--blue-light);
+  background-color: var(--yellow-light);
   margin-right: auto;
   top: 50%;
   left: 70%;
@@ -757,6 +761,7 @@ SECTION FEATURED
   color: var(--gray);
   margin-bottom: 2rem;
   font-size: var(--font-size-sm);
+  margin-top: 2rem;
 }
 
 .footer__paragraph--copy {
@@ -789,7 +794,7 @@ SECTION FEATURED
   width: 100vw;
   height: 100vh;
   z-index: 99;
-  background-color: #0a192fe7;
+  background-color: var(--bg-secondary);
   display: flex;
   align-items: center;
   flex-direction: column;

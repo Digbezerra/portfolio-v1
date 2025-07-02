@@ -1,4 +1,5 @@
 export function StackList() {
+  //insira neste array as tecnologias que você domina
   const stack = [
     "HTML",
     "CSS",

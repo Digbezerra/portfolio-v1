@@ -87,7 +87,7 @@
   }
   .profile-image {
     filter: sepia(0);
-    box-shadow: 4px 4px 0px var(--blue-vivid);
+    box-shadow: 4px 4px 0px var(--yellow-vivid);
   }
 
   .footer__icons {

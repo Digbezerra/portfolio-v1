@@ -15,27 +15,23 @@ export function About() {
           <div className="section-about__content">
             <div>
               <p className="paragraph">
-                Desenvolvedor Frontend com mais de 4 anos de experiência,
-                incluindo atuação como Engenheiro de Software Jr. em projetos de
-                e-commerce B2C e B2B para grandes empresas como Nestlé, Ambev,
-                Reckitt e Hortifrutti. Especialista em React.js, PWA, Adobe
-                Commerce (Magento) e integração com times globais.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Excepturi, ea iure repudiandae impedit sit facere maxime id
+                exercitationem voluptatibus magnam tenetur perspiciatis
+                expedita, perferendis tempora voluptatem dolor repellat,
+                inventore eveniet.
               </p>
               <p className="paragraph">
-                Reconhecido por liderança técnica, comunicação eficiente,
-                mentoria de desenvolvedores iniciantes e forte foco em
-                performance e experiência do usuário. Colaborei diretamente com
-                equipes multinacionais em inglês, contribuindo para a entrega de
-                soluções robustas e modernas. Estou em busca de oportunidades
-                para continuar gerando valor através de interfaces ricas,
-                acessíveis e eficientes, sempre com espírito colaborativo e
-                vontade de evoluir.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Distinctio laudantium amet, quidem, animi fugit rem quisquam est
+                veniam ex ea optio consequuntur in facilis consequatur
+                aspernatur error consectetur nam commodi.
               </p>
             </div>
 
             <img
               className="profile-image"
-              src="images/selfie.png"
+              src="images/placeholder_600x400.png" //imagem 300x300 é o ideal
               alt="profile photo placeholder"
             />
           </div>

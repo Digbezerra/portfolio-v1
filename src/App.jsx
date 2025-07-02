@@ -13,7 +13,8 @@ function App() {
   return (
     <>
       <Head>
-        <Logo imgName={"logo-white.png"} altText={"Dig dev logo"} />
+        {/*insira a imagem na pasta /images */}
+        <Logo imgName={"meulogo.webp"} altText={"meu logo"} />
       </Head>
       <MainContainer>
         <Hero />
