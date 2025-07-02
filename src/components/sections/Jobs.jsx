@@ -6,7 +6,7 @@ const jobs = [
     name: "Webjump",
     full_name: "Webjump",
     role: "Software Engineer",
-    begin_date: "Out. 2022", //Needs to be ISO format, but it's a controlled date, for now at least
+    begin_date: "Out. 2022",
     end_date: "Jan. 2024",
     description: [
       "Atuei como Engenheiro de Software Jr. em um dos maiores projetos de e-commerce B2B da Nestlé, chamado “Nestlé Até Você”, com foco em arquitetura técnica, liderança de equipe e melhoria contínua do produto.",
@@ -21,7 +21,7 @@ const jobs = [
     name: "Webjump",
     full_name: "Webjump",
     role: "Frontend developer",
-    begin_date: "Nov. 2019", //Needs to be ISO format, but it's a controlled date, for now at least
+    begin_date: "Nov. 2019",
     end_date: "Out. 2022",
     description: [
       "Desenvolvimento de aplicações Web. Hot sites desenvolvidos em caráter de promoção de eventos e produtos, HTML, SCSS, Drupal, integração com API. Aplicações nativas mobile, Flutter. Lojas virtuais (e-commerces), HTML, CSS, Javascript, React, GraphQL.",
@@ -37,9 +37,15 @@ const jobs = [
     begin_date: "Jun. 2019",
     end_date: "Nov. 2019",
     description: [
-      "Atuei de maneira a garantir a entrega de software com qualidade e de acordo com os requisitos.",
-      "Planejamento de casos de teste, roteiros de testes manuais e automatizados.",
-      "Documentação de casos de uso, tutoriais de execução de testes para a equipe de cobrança.",
+      "Atuei por 6 meses como Analista de Testes (QA), com foco em garantir a qualidade das entregas durante o ciclo de desenvolvimento de software.",
+      "Execução de testes funcionais, regressivos e exploratórios em ambiente de homologação e produção.",
+      "Elaboração e manutenção de casos de teste com base nos requisitos técnicos e funcionais.",
+      "Abertura e acompanhamento de bugs, assegurando a comunicação clara com o time de desenvolvimento.",
+      "Validação de correções antes da liberação de novas versões.",
+      "Participação em cerimônias ágeis (dailies, plannings, reviews) para alinhamento com o time de produto e desenvolvimento.",
+      "Apoio na automatização de testes (caso tenha usado alguma ferramenta, como Cypress, Selenium, Jest, etc., pode citar).",
+      "Garantia da conformidade das entregas com critérios de aceite e padrões de qualidade da empresa.",
+      "Ferramentas e tecnologias utilizadas: Jira, TestRail (ou similar), Git, Postman, navegador DevTools, entre outras.",
     ],
   },
   {
@@ -47,12 +53,16 @@ const jobs = [
     name: "FCL",
     full_name: "Faculdade Casper Líbero",
     role: "Estagiário de suporte de T.I",
-    begin_date: "Jun. 2019",
-    end_date: "Jan. 2018",
+    begin_date: "Jan. 2018 ",
+    end_date: "Jun. 2019",
     description: [
-      "Realizar o acompanhamento de atividades relacionadas aos laboratórios de informática de Fundação",
-      "Oferecer o suporte técnico ao corpo docente em questão de infraestrutura tecnológica",
-      "Realizar a manutenção e atualização de elementos de hardware e de software dos setores da Fundação",
+      "Atuei no suporte técnico e operacional dos laboratórios de informática da Fundação, prestando assistência direta às áreas acadêmicas e administrativas.",
+      "Acompanhamento das atividades dos laboratórios de informática, garantindo o pleno funcionamento dos ambientes tecnológicos.",
+      "Suporte técnico ao corpo docente e usuários, auxiliando na utilização de recursos de infraestrutura de TI.",
+      "Manutenção preventiva e corretiva de hardware, com substituição e configuração de componentes.",
+      "Instalação, atualização e configuração de softwares nos equipamentos utilizados nos setores da Fundação.",
+      "Apoio em demandas relacionadas à infraestrutura de redes e conectividade.",
+      "Ferramentas e tecnologias utilizadas: sistemas operacionais Windows e Linux, softwares educacionais e administrativos, ferramentas de suporte remoto e diagnóstico.",
     ],
   },
 ];

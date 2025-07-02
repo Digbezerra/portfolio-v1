@@ -1,18 +1,18 @@
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
 
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 /**************************/
 /* BELOW 1200px (Smaller desktops) */
 /**************************/
 
 @media (max-width: 75em) {
-  /* .main-container {
-    max-width: 90rem;
-  } */
-
-  /* .section-hero {
-    width: 100%;
-  } */
-
   .btn--default__hero {
     width: 30rem;
   }
@@ -146,11 +146,6 @@
   .featured__container--left {
     grid-template-columns: 50% 50%;
   }
-
-  /* .featured__container--left,
-  .featured__container {
-    display: block;
-  } */
 
   .featured__description--container,
   .featured__description--container--left {
@@ -314,11 +309,3 @@
     grid-column: 1;
   }
 }
-
-/* 
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/

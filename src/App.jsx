@@ -8,13 +8,6 @@ import { FeaturedList } from "./components/sections/FeaturedList";
 import { ProjectCourses } from "./components/sections/ProjectCourses";
 import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/sections/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-
-AOS.init({
-  duration: 1000,
-});
 
 function App() {
   return (
