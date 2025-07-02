@@ -5,7 +5,7 @@ import { LinkedinIcon } from "./icons/LinkedinIcon";
 export function ProjectCard({ data }) {
   return (
     <>
-      <div className="projects__item" data-aos="fade-up">
+      <div className="projects__item">
         <div className="projects__header">
           {data.course_url && (
             <>

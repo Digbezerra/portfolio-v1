@@ -6,16 +6,10 @@ export function Hero() {
   return (
     <>
       <section className="section-hero margin-bottom--regular">
-        <p data-aos="fade-in" className="text--featured">
-          Olá, meu nome é
-        </p>
-        <h1 data-aos="fade-up" className="title title--h1">
-          Diego Bezerra.
-        </h1>
-        <h2 data-aos="fade-up" className="title title--h2">
-          Transformo ideias em Web apps.
-        </h2>
-        <p data-aos="fade-in" className="text--regular__hero">
+        <p className="text--featured">Olá, meu nome é</p>
+        <h1 className="title title--h1">Diego Bezerra.</h1>
+        <h2 className="title title--h2">Transformo ideias em Web apps.</h2>
+        <p className="text--regular__hero">
           Criando experiências web performáticas, acessíveis e escaláveis com
           foco na experiência do usuário desde 2019.
         </p>

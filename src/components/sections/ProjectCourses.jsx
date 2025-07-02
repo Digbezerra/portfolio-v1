@@ -51,11 +51,7 @@ const projectData = [
 export function ProjectCourses() {
   return (
     <>
-      <section
-        className="section-projects margin-bottom--regular"
-        data-aos="fade-up"
-        data-aos-duration="500"
-      >
+      <section className="section-projects margin-bottom--regular">
         <div className="section__title">
           <span className="title__number">03. </span>
           <h2>Cursos e projetinhos</h2>

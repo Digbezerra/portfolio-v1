@@ -59,8 +59,6 @@ export function FeaturedList() {
       <section
         className="section-featured margin-bottom--regular padding-top--regular"
         id="featured"
-        data-aos="fade-up"
-        data-aos-duration="500"
       >
         <div className="section__title">
           <span className="title__number">03. </span>

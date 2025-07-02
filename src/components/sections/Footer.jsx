@@ -4,7 +4,7 @@ import { LinkedinIcon } from "../icons/LinkedinIcon";
 export function Footer() {
   return (
     <>
-      <footer className="footer" data-aos="fade-up" data-aos-duration="500">
+      <footer className="footer">
         <div className="footer__icons">
           <a
             href="https://github.com/Digbezerra"

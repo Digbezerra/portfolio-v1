@@ -69,8 +69,6 @@ export function Jobs() {
       <section
         className="section-jobs margin-bottom--regular padding-top--regular"
         id="jobs"
-        data-aos="fade-up"
-        data-aos-duration="500"
       >
         <div className="section__title">
           <span className="title__number">02. </span>

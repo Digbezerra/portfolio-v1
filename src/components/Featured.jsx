@@ -3,11 +3,7 @@ import { useState, useEffect } from "react";
 function FeaturedContentLeft({ data }) {
   return (
     <>
-      <div
-        className="featured__container--left"
-        data-aos="fade-up"
-        data-aos-duration="500"
-      >
+      <div className="featured__container--left">
         <div className="featured__image">
           <a href={data.url} target="_blank" rel="noopener noreferrer">
             <img src={`images/${data.image}`} alt="project thumbnail" />
@@ -37,11 +33,7 @@ function FeaturedContentLeft({ data }) {
 function FeaturedContentRight({ data }) {
   return (
     <>
-      <div
-        className="featured__container"
-        data-aos="fade-up"
-        data-aos-duration="500"
-      >
+      <div className="featured__container">
         <div className="featured__content">
           <p className="title__project">{data.sub_title}</p>
           <p className="subtitle__project">{data.name}</p>
@@ -70,11 +62,7 @@ function FeaturedContentRight({ data }) {
 
 function FeaturedMobile({ data }) {
   return (
-    <div
-      className="featured__mobile"
-      data-aos="fade-up"
-      data-aos-duration="500"
-    >
+    <div className="featured__mobile">
       <div>
         <img src={`images/${data.image}`} alt="project thumbnail" />
       </div>
