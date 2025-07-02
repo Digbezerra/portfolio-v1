@@ -1,6 +1,5 @@
 import { FolderIcon } from "./icons/FolderIcon";
 import { GithubIcon } from "./icons/GithubIcon";
-import { LinkedinIcon } from "./icons/LinkedinIcon";
 
 export function ProjectCard({ data }) {
   return (
@@ -29,7 +28,6 @@ export function ProjectCard({ data }) {
               </a>
             </>
           )}
-          {/* <LinkedinIcon /> */}
         </div>
         <div className="projects__content">
           <h3>{data.name}</h3>
